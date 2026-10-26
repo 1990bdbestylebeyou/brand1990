@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1990 | Premium Quality Baggy Pant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0d0f12;
+            --card-bg: #16191f;
+            --accent: #d4af37;
+            --accent-hover: #e6c35c;
+            --text-main: #f3f4f6;
+            --text-muted: #9ca3af;
+            --border-color: #272c35;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Montserrat', 'Hind Siliguri', sans-serif; }
+        body { background-color: var(--bg-color); color: var(--text-main); line-height: 1.6; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 0 16px; }
+        header { background: rgba(13, 15, 18, 0.95); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border-color); position: sticky; top: 0; z-index: 100; padding: 12px 0; }
+        .header-wrap { display: flex; align-items: center; justify-content: space-between; }
+        .brand-logo { display: flex; align-items: center; gap: 12px; text-decoration: none; color: #fff; }
+        .brand-logo img { width: 48px; height: 48px; border-radius: 50%; border: 2px solid var(--accent); object-fit: cover; }
+        .brand-logo span { font-size: 1.5rem; font-weight: 800; letter-spacing: 2px; color: var(--accent); }
+        .hotline { display: inline-flex; align-items: center; background: #20252e; padding: 6px 14px; border-radius: 30px; color: var(--accent); font-weight: 600; font-size: 0.9rem; text-decoration: none; border: 1px solid var(--border-color); }
+        .product-section { padding: 30px 0; display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+        @media (max-width: 768px) { .product-section { grid-template-columns: 1fr; } }
+        .gallery-box { position: sticky; top: 90px; height: fit-content; }
+        .main-img-wrap { width: 100%; height: 420px; background: #000; border-radius: 12px; overflow: hidden; border: 1px solid var(--border-color); display: flex; align-items: center; justify-content: center; }
+        .main-img-wrap img { width: 100%; height: 100%; object-fit: cover; }
+        .thumbs-wrap { display: flex; gap: 12px; margin-top: 14px; }
+        .thumb { flex: 1; height: 90px; border-radius: 8px; overflow: hidden; border: 2px solid var(--border-color); cursor: pointer; transition: all 0.2s; position: relative; }
+        .thumb img { width: 100%; height: 100%; object-fit: cover; }
+        .thumb.active { border-color: var(--accent); transform: scale(1.03); }
+        .thumb span { position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0, 0, 0, 0.7); font-size: 0.75rem; text-align: center; padding: 2px 0; }
+        .product-info h1 { font-size: 1.8rem; font-weight: 700; margin-bottom: 6px; }
+        .brand-sub { color: var(--accent); font-weight: 600; text-transform: uppercase; font-size: 0.95rem; margin-bottom: 15px; }
+        .price-badge { display: flex; align-items: baseline; gap: 12px; margin-bottom: 20px; }
+        .sale-price { font-size: 2rem; font-weight: 800; color: var(--accent); }
+        .regular-price { font-size: 1.2rem; text-decoration: line-through; color: var(--text-muted); }
+        .discount-badge { background: #ef4444; color: #fff; padding: 3px 10px; border-radius: 20px; font-size: 0.85rem; font-weight: 700; }
+        .size-chart-table { width: 100%; border-collapse: collapse; margin: 15px 0; background: var(--card-bg); border-radius: 8px; overflow: hidden; font-size: 0.9rem; }
+        .size-chart-table th, .size-chart-table td { padding: 10px; text-align: center; border: 1px solid var(--border-color); }
+        .size-chart-table th { background: #1c212a; color: var(--accent); }
+        .selection-box { background: var(--card-bg); padding: 20px; border-radius: 12px; border: 1px solid var(--border-color); margin: 20px 0; }
+        .selection-box label { display: block; margin-bottom: 6px; font-size: 0.9rem; font-weight: 600; }
+        .select-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 15px; }
+        select, input, textarea { width: 100%; padding: 12px; background: #0f1216; border: 1px solid var(--border-color); border-radius: 6px; color: #fff; font-size: 0.95rem; outline: none; }
+        select:focus, input:focus, textarea:focus { border-color: var(--accent); }
+        .btn-add-item { width: 100%; background: #202733; border: 1px solid var(--accent); color: var(--accent); padding: 12px; border-radius: 6px; font-weight: 700; cursor: pointer; transition: all 0.2s; }
+        .btn-add-item:hover { background: var(--accent); color: #000; }
+        .cart-list { margin-top: 15px; border-top: 1px dashed var(--border-color); padding-top: 15px; }
+        .cart-item { display: flex; justify-content: space-between; align-items: center; background: #0f1216; padding: 10px 14px; border-radius: 6px; margin-bottom: 8px; border: 1px solid #1f242e; }
+        .cart-item-remove { color: #ef4444; cursor: pointer; font-weight: bold; font-size: 1.1rem; }
+        .quality-section { background: var(--card-bg); border-radius: 12px; padding: 24px; border: 1px solid var(--border-color); margin: 30px 0; }
+        .quality-section h3 { color: var(--accent); margin-bottom: 16px; font-size: 1.3rem; }
+        .quality-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
+        .q-card { background: #0f1216; padding: 16px; border-radius: 8px; border: 1px solid var(--border-color); }
+        .q-card strong { display: block; color: var(--text-main); margin-bottom: 4px; }
+        .q-card p { font-size: 0.85rem; color: var(--text-muted); }
+        .order-section { background: var(--card-bg); border-radius: 12px; padding: 30px; border: 1px solid var(--border-color); margin-bottom: 50px; }
+        .order-section h2 { text-align: center; font-size: 1.6rem; color: var(--accent); margin-bottom: 20px; }
+        .form-group { margin-bottom: 16px; }
+        .form-group label { display: block; margin-bottom: 6px; font-weight: 600; font-size: 0.95rem; }
+        .pricing-summary { background: #0f1216; border: 1px solid var(--border-color); border-radius: 8px; padding: 16px; margin: 20px 0; }
+        .price-row { display: flex; justify-content: space-between; margin-bottom: 8px; font-size: 0.95rem; color: var(--text-muted); }
+        .price-row.total { font-size: 1.25rem; color: #fff; font-weight: 700; border-top: 1px solid var(--border-color); padding-top: 10px; margin-top: 10px; }
+        .price-row.total span:last-child { color: var(--accent); }
+        .btn-submit { width: 100%; background: var(--accent); color: #000; padding: 16px; font-size: 1.2rem; font-weight: 800; border: none; border-radius: 8px; cursor: pointer; transition: all 0.2s; text-transform: uppercase; }
+        .btn-submit:hover { background: var(--accent-hover); }
+        footer { border-top: 1px solid var(--border-color); padding: 30px 0; text-align: center; color: var(--text-muted); font-size: 0.9rem; }
+        footer a { color: var(--accent); text-decoration: none; }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container header-wrap">
+        <a href="https://www.facebook.com/share/1JCxA3g2WB/?mibextid=wwXIfr" target="_blank" class="brand-logo">
+            <img src="https://i.postimg.cc/66db5SMY/IMG-9278.jpg" alt="1990 Logo">
+            <span>1990</span>
+        </a>
+        <a href="tel:01949704302" class="hotline">📞 01949704302</a>
+    </div>
+</header>
+
+<main class="container">
+    <div class="product-section">
+        <div class="gallery-box">
+            <div class="main-img-wrap">
+                <img id="mainImage" src="https://i.postimg.cc/SNpn11MK/F5285F06-A65C-4E7D-94B8-693F610F9936.png" alt="Black Pant">
+            </div>
+            <div class="thumbs-wrap">
+                <div class="thumb active" onclick="switchImage('https://i.postimg.cc/SNpn11MK/F5285F06-A65C-4E7D-94B8-693F610F9936.png', 'ব্লাক', this)">
+                    <img src="https://i.postimg.cc/SNpn11MK/F5285F06-A65C-4E7D-94B8-693F610F9936.png" alt="Black">
+                    <span>ব্লাক</span>
+                </div>
+                <div class="thumb" onclick="switchImage('https://i.postimg.cc/wBtxjDNR/7589D581-B37D-40EE-924B-C51922FDF0AB.png', 'চারকোল গ্রে', this)">
+                    <img src="https://i.postimg.cc/wBtxjDNR/7589D581-B37D-40EE-924B-C51922FDF0AB.png" alt="Charcoal Grey">
+                    <span>চারকোল গ্রে</span>
+                </div>
+                <div class="thumb" onclick="switchImage('https://i.postimg.cc/MT2wZNx4/55D5EED7-F6A5-4D80-99EC-204295CC8F9A.png', 'নেভি ব্লু', this)">
+                    <img src="https://i.postimg.cc/MT2wZNx4/55D5EED7-F6A5-4D80-99EC-204295CC8F9A.png" alt="Navy Blue">
+                    <span>নেভি ব্লু</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-info">
+            <p class="brand-sub">Polo Ralph Lauren</p>
+            <h1>Premium Quality Baggy Pant</h1>
+
+            <div class="price-badge">
+                <span class="sale-price">৳ ৭৯৯</span>
+                <span class="regular-price">৳ ১,৪৯৯</span>
+                <span class="discount-badge">৪৭% ছাড়</span>
+            </div>
+
+            <h4>📏 সাইজ মেজারমেন্ট (ইঞ্চি):</h4>
+            <table class="size-chart-table">
+                <thead>
+                    <tr><th>সাইজ</th><th>কোমর (Waist)</th><th>লম্বা (Length)</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>M</td><td>৩০ - ৩২"</td><td>৩৮"</td></tr>
+                    <tr><td>L</td><td>৩২ - ৩৪"</td><td>৩৯"</td></tr>
+                    <tr><td>XL</td><td>৩৪ - ৩৬"</td><td>৪০"</td></tr>
+                    <tr><td>XXL</td><td>৩৬ - ৩৮"</td><td>৪১"</td></tr>
+                </tbody>
+            </table>
+
+            <div class="selection-box">
+                <h4>কালার ও সাইজ পছন্দ করুন:</h4>
+                <div class="select-grid" style="margin-top: 10px;">
+                    <div>
+                        <label>কালার:</label>
+                        <select id="itemColor">
+                            <option value="ব্লাক (Black)">ব্লাক</option>
+                            <option value="চারকোল গ্রে (Charcoal Grey)">চারকোল গ্রে</option>
+                            <option value="নেভি ব্লু (Navy Blue)">নেভি ব্লু</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>সাইজ:</label>
+                        <select id="itemSize">
+                            <option value="M">M (কোমর ৩০-৩২, লম্বা ৩৮)</option>
+                            <option value="L">L (কোমর ৩২-৩৪, লম্বা ৩৯)</option>
+                            <option value="XL">XL (কোমর ৩৪-৩৬, লম্বা ৪০)</option>
+                            <option value="XXL">XXL (কোমর ৩৬-৩৮, লম্বা ৪১)</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="button" class="btn-add-item" onclick="addItemToCart()">+ আইটেম যোগ করুন</button>
+                <div class="cart-list" id="cartContainer"></div>
+            </div>
+        </div>
+    </div>
+
+    <section class="quality-section">
+        <h3>✨ প্রিমিয়াম পণ্যের গুণগত বৈশিষ্ট্য</h3>
+        <div class="quality-grid">
+            <div class="q-card">
+                <strong>China Dobby Fabric (240 GSM)</strong>
+                <p>হেভি ডিউটি এবং চমৎকার টেক্সচার সমৃদ্ধ চায়না ডব্বি ফেব্রিক দিয়ে তৈরি, যা দীর্ঘস্থায়ী ও অত্যন্ত আরামদায়ক।</p>
+            </div>
+            <div class="q-card">
+                <strong>নিখুঁত ব্যা MinMaxScaler ফিটিং</strong>
+                <p>ট্রেন্ডি এবং রিল্যাক্সড লুক যা ক্যাজুয়াল ওয়্যার ও স্ট্রিটওয়্যারের সাথে পারফেক্ট ম্যাচ করে।</p>
+            </div>
+            <div class="q-card">
+                <strong>কালার ও ফেব্রিক গ্যারান্টি</strong>
+                <p>১০০% কালার গ্যারান্টি। ওয়াশের পরেও কোনো ধরনের কালার ফেড হওয়া বা রোঁয়া উঠার ভয় নেই।</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="order-section">
+        <h2>অর্ডার কনফার্ম করতে ফর্মটি পূরণ করুন</h2>
+        <form id="orderForm">
+            <div class="form-group">
+                <label for="fullName">আপনার নাম *</label>
+                <input type="text" id="fullName" placeholder="পুরো নাম লিখুন" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">মোবাইল নাম্বার *</label>
+                <input type="tel" id="phone" placeholder="১১ ডিজিটের মোবাইল নাম্বার" required>
+            </div>
+
+            <div class="form-group">
+                <label for="locationType">আপনার জেলা / এরিয়া নির্বাচন করুন *</label>
+                <select id="locationType" onchange="updateDeliveryCharge()" required>
+                    <option value="" disabled selected>জেলা নির্বাচন করুন</option>
+                    <optgroup label="ঢাকা জেলা (৳৭০)">
+                        <option value="Dhaka_City">ঢাকা জেলা / সিটি (৳৭০)</option>
+                    </optgroup>
+                    <optgroup label="সাব ঢাকা (৳১০০)">
+                        <option value="Gazipur">গাজীপুর (৳১০০)</option>
+                        <option value="Narayanganj">নারায়ণগঞ্জ (৳১০০)</option>
+                        <option value="Savar_Keraniganj">সাভার / কেরানীগঞ্জ (৳১০০)</option>
+                    </optgroup>
+                    <optgroup label="ঢাকার জেলার বাহিরে (৳১২০)">
+                        <option value="Outside_Dhaka">অন্যান্য সকল জেলা (৳১২০)</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="address">সম্পূর্ণ ঠিকানা (বাসা/রোড/থানা/উপজেলা) *</label>
+                <textarea id="address" rows="3" placeholder="গ্রাম/রোড, থানা, জেলা সহ বিস্তারিত ঠিকানা দিন" required></textarea>
+            </div>
+
+            <div class="pricing-summary">
+                <div class="price-row">
+                    <span>মোট পণ্যের সংখ্যা:</span>
+                    <span id="totalQtyDisplay">১ পিস</span>
+                </div>
+                <div class="price-row">
+                    <span>পণ্যের মূল্য:</span>
+                    <span id="productPriceDisplay">৳ ৭৯৯</span>
+                </div>
+                <div class="price-row">
+                    <span>ডেলিভারি চার্জ:</span>
+                    <span id="deliveryChargeDisplay">৳ ০</span>
+                </div>
+                <div class="price-row total">
+                    <span>সর্বমোট টাকা:</span>
+                    <span id="grandTotalDisplay">৳ ৭৯৯</span>
+                </div>
+            </div>
+
+            <button type="submit" id="submitBtn" class="btn-submit">অর্ডার কনফার্ম করুন (ক্যাশ অন ডেলিভারি)</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <div class="container">
+        <p>© 2026 <strong>1990</strong>. All Rights Reserved.</p>
+        <p style="margin-top: 6px;">জরুরি প্রয়োজনে কল করুন: <a href="tel:01949704302">01949704302</a></p>
+    </div>
+</footer>
+
+<script>
+    const UNIT_PRICE = 799;
+    let cart = [{ color: 'ব্লাক (Black)', size: 'L' }];
+    let deliveryCharge = 0;
+
+    function switchImage(src, colorName, thumbElement) {
+        document.getElementById('mainImage').src = src;
+        document.querySelectorAll('.thumb').forEach(t => t.classList.remove('active'));
+        if (thumbElement) thumbElement.classList.add('active');
+        const colorSelect = document.getElementById('itemColor');
+        for (let i = 0; i < colorSelect.options.length; i++) {
+            if (colorSelect.options[i].text.includes(colorName)) {
+                colorSelect.selectedIndex = i;
+                break;
+            }
+        }
+    }
+
+    function renderCart() {
+        const cartContainer = document.getElementById('cartContainer');
+        if (cart.length === 0) {
+            cartContainer.innerHTML = '<p style="color: var(--text-muted); font-size: 0.9rem;">কোনো আইটেম যোগ করা হয়নি।</p>';
+        } else {
+            let html = '';
+            cart.forEach((item, index) => {
+                html += `
+                    <div class="cart-item">
+                        <div><strong>${item.color}</strong> - সাইজ: <span style="color: var(--accent);">${item.size}</span></div>
+                        <span class="cart-item-remove" onclick="removeCartItem(${index})">✕</span>
+                    </div>`;
+            });
+            cartContainer.innerHTML = html;
+        }
+        recalculateTotals();
+    }
+
+    function addItemToCart() {
+        const color = document.getElementById('itemColor').value;
+        const size = document.getElementById('itemSize').value;
+        cart.push({ color, size });
+        renderCart();
+    }
+
+    function removeCartItem(index) {
+        cart.splice(index, 1);
+        renderCart();
+    }
+
+    function updateDeliveryCharge() {
+        const loc = document.getElementById('locationType').value;
+        if (loc === 'Dhaka_City') deliveryCharge = 70;
+        else if (['Gazipur', 'Narayanganj', 'Savar_Keraniganj'].includes(loc)) deliveryCharge = 100;
+        else if (loc === 'Outside_Dhaka') deliveryCharge = 120;
+        else deliveryCharge = 0;
+        recalculateTotals();
+    }
+
+    function recalculateTotals() {
+        const qty = cart.length;
+        const productTotal = qty * UNIT_PRICE;
+        const grandTotal = qty > 0 ? (productTotal + deliveryCharge) : 0;
+        document.getElementById('totalQtyDisplay').innerText = qty + ' পিস';
+        document.getElementById('productPriceDisplay').innerText = '৳ ' + productTotal;
+        document.getElementById('deliveryChargeDisplay').innerText = '৳ ' + deliveryCharge;
+        document.getElementById('grandTotalDisplay').innerText = '৳ ' + grandTotal;
+    }
+
+    renderCart();
+
+    document.getElementById('orderForm').addEventListener('submit', async function(e) {
+        e.preventDefault();
+        if (cart.length === 0) {
+            alert('দয়া করে কমপক্ষে ১টি আইটেম যোগ করুন!');
+            return;
+        }
+
+        const submitBtn = document.getElementById('submitBtn');
+        submitBtn.disabled = true;
+        submitBtn.innerText = 'অর্ডার প্রসেস হচ্ছে...';
+
+        const name = document.getElementById('fullName').value;
+        const phone = document.getElementById('phone').value;
+        const locationText = document.getElementById('locationType').options[document.getElementById('locationType').selectedIndex].text;
+        const address = document.getElementById('address').value;
+        const itemsSummary = cart.map((item, idx) => `${idx + 1}. ${item.color} [সাইজ: ${item.size}]`).join(' | ');
+        const totalAmount = (cart.length * UNIT_PRICE) + deliveryCharge;
+
+        try {
+            await fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    access_key: '8cb021cc-8058-4dd2-9c17-c7f8728f9355',
+                    subject: `🚨 নতুন অর্ডার! (1990) - ${name}`,
+                    customer_name: name,
+                    phone: phone,
+                    location: locationText,
+                    items: itemsSummary,
+                    quantity: cart.length + ' পিস',
+                    delivery: '৳ ' + deliveryCharge,
+                    total: '৳ ' + totalAmount,
+                    address: address
+                })
+            });
+
+            alert(`ধন্যবাদ ${name}! আপনার অর্ডারটি সফলভাবে গ্রহণ করা হয়েছে।`);
+            document.getElementById('orderForm').reset();
+            cart = [];
+            deliveryCharge = 0;
+            renderCart();
+        } catch (err) {
+            alert('অর্ডার পাঠাতে সমস্যা হয়েছে। কল করুন: 01949704302');
+        } finally {
+            submitBtn.disabled = false;
+            submitBtn.innerText = 'অর্ডার কনফার্ম করুন (ক্যাশ অন ডেলিভারি)';
+        }
+    });
+</script>
+</body>
+</html>
