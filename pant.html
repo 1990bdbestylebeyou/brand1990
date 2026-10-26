@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1990 | Premium Quality Baggy Pant</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brandDark: '#0d0f12',
+                        brandCard: '#151921',
+                        brandInner: '#0a0d12',
+                        brandBorder: '#262d3d',
+                        brandGold: '#d4af37',
+                        brandGoldHover: '#e6c35c'
+                    },
+                    fontFamily: {
+                        sans: ['Hind Siliguri', 'sans-serif'],
+                        en: ['Montserrat', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0d0f12;
+            color: #f3f4f6;
+            font-family: 'Hind Siliguri', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+        .thumb-selected {
+            border-color: #d4af37 !important;
+            box-shadow: 0 0 16px rgba(212, 175, 55, 0.45);
+            transform: scale(1.03);
+        }
+        .thumb-selected .check-indicator {
+            display: flex !important;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-brandGold selection:text-black">
+
+    <!-- হেডার -->
+    <header class="sticky top-0 z-50 bg-[#0d0f12]/95 backdrop-blur-md border-b border-brandBorder py-3">
+        <div class="max-w-xl mx-auto px-4 flex items-center justify-between">
+            <a href="https://www.facebook.com/share/1JCxA3g2WB/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3">
+                <img src="https://i.postimg.cc/66db5SMY/IMG-9278.jpg" alt="1990 Logo" class="w-11 h-11 rounded-full border-2 border-brandGold object-cover shadow-md shadow-brandGold/20" onerror="this.src='https://placehold.co/44x44/151921/d4af37?text=1990'">
+                <div class="flex flex-col">
+                    <span class="font-en font-black text-2xl tracking-widest text-brandGold leading-none">1990</span>
+                    <span class="text-[10px] text-gray-400 uppercase tracking-wider font-semibold">Streetwear BD</span>
+                </div>
+            </a>
+            <a href="tel:01949704302" class="flex items-center gap-2 bg-[#1b212c] hover:bg-[#252c3b] border border-brandBorder px-3.5 py-1.5 rounded-full text-brandGold text-xs font-bold shadow-sm">
+                <span>📞</span>
+                <span class="font-en">01949704302</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- মূল কন্টেন্ট (ধাপ অনুযায়ী) -->
+    <main class="max-w-xl mx-auto px-4 py-5 w-full space-y-5">
+
+        <!-- ধাপ ১: বড় মেইন ছবি (পুরো প্যান্ট একদম শুরু থেকে শেষ পর্যন্ত সম্পূর্ণ দেখা যাবে, কোনো ক্রপ হবে না) -->
+        <section class="w-full">
+            <div class="relative w-full h-[470px] sm:h-[530px] bg-[#050709] rounded-2xl border border-brandBorder overflow-hidden shadow-2xl flex items-center justify-center p-3">
+                <img id="mainProductPhoto" 
+                     src="https://i.postimg.cc/SNpn11MK/F5285F06-A65C-4E7D-94B8-693F610F9936.png" 
+                     alt="Baggy Pant" 
+                     class="max-w-full max-h-full w-auto h-auto object-contain transition-all duration-300 drop-shadow-[0_12px_24px_rgba(0,0,0,0.85)]">
+                <div class="absolute top-3 left-3 bg-red-600/90 text-white text-[11px] font-bold px-2.5 py-1 rounded-md uppercase tracking-wider shadow">
+                    ৪৭% ছাড়
+                </div>
+                <div class="absolute top-3 right-3 bg-brandCard/90 border border-brandGold/60 text-brandGold text-xs font-bold px-3 py-1 rounded-full shadow flex items-center gap-1.5">
+                    <span class="w-2 h-2 rounded-full bg-brandGold animate-pulse"></span>
+                    <span id="floatingColorName">ব্লাক</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ধাপ ২: তার ঠিক নিচের ধাপে ৩টি থাম্বনেল (এখান থেকে কালার সিলেক্ট হবে) -->
+        <section class="w-full">
+            <div class="flex items-center justify-between mb-2">
+                <span class="text-xs font-bold text-gray-300 flex items-center gap-1.5">
+                    <span>🎨</span> নিচের থাম্বনেল থেকে কালার সিলেক্ট করুন:
+                </span>
+                <span id="selectedColorDisplay" class="text-xs font-bold text-brandGold bg-brandInner border border-brandGold/40 px-2.5 py-0.5 rounded-full">
+                    সিলেক্টেড: ব্লাক
+                </span>
+            </div>
+            <div class="grid grid-cols-3 gap-3">
+                
+                <!-- থাম্বনেল ১: ব্লাক -->
+                <button type="button" 
+                        onclick="selectColorVariant('ব্লাক', 'https://i.postimg.cc/SNpn11MK/F5285F06-A65C-4E7D-94B8-693F610F9936.png', this)" 
+                        class="thumb-item thumb-selected relative aspect-[3/4] rounded-xl overflow-hidden border-2 border-brandBorder bg-[#050709] p-1 flex flex-col items-center justify-between transition-all duration-200">
+                    <div class="check-indicator absolute top-1.5 right-1.5 bg-brandGold text-black rounded-full w-4 h-4 flex items-center justify-center text-[10px] font-black z-10 shadow">
+                        ✓
+                    </div>
+                    <img src="https://i.postimg.cc/SNpn11MK/F5285F06-A65C-4E7D-94B8-693F610F9936.png" alt="Black" class="w-full h-4/5 object-contain">
+                    <span class="w-full bg-[#12161f] py-1 text-[11px] text-center font-bold text-gray-200 rounded">ব্লাক</span>
+                </button>
+
+                <!-- থাম্বনেল ২: চারকোল গ্রে -->
+                <button type="button" 
+                        onclick="selectColorVariant('চারকোল গ্রে', 'https://i.postimg.cc/wBtxjDNR/7589D581-B37D-40EE-924B-C51922FDF0AB.png', this)" 
+                        class="thumb-item relative aspect-[3/4] rounded-xl overflow-hidden border-2 border-brandBorder bg-[#050709] p-1 flex flex-col items-center justify-between transition-all duration-200">
+                    <div class="check-indicator hidden absolute top-1.5 right-1.5 bg-brandGold text-black rounded-full w-4 h-4 items-center justify-center text-[10px] font-black z-10 shadow">
+                        ✓
+                    </div>
+                    <img src="https://i.postimg.cc/wBtxjDNR/7589D581-B37D-40EE-924B-C51922FDF0AB.png" alt="Charcoal Grey" class="w-full h-4/5 object-contain">
+                    <span class="w-full bg-[#12161f] py-1 text-[11px] text-center font-bold text-gray-200 rounded">চারকোল গ্রে</span>
+                </button>
+
+                <!-- থাম্বনেল ৩: নেভি ব্লু -->
+                <button type="button" 
+                        onclick="selectColorVariant('নেভি ব্লু', 'https://i.postimg.cc/MT2wZNx4/55D5EED7-F6A5-4D80-99EC-204295CC8F9A.png', this)" 
+                        class="thumb-item relative aspect-[3/4] rounded-xl overflow-hidden border-2 border-brandBorder bg-[#050709] p-1 flex flex-col items-center justify-between transition-all duration-200">
+                    <div class="check-indicator hidden absolute top-1.5 right-1.5 bg-brandGold text-black rounded-full w-4 h-4 items-center justify-center text-[10px] font-black z-10 shadow">
+                        ✓
+                    </div>
+                    <img src="https://i.postimg.cc/MT2wZNx4/55D5EED7-F6A5-4D80-99EC-204295CC8F9A.png" alt="Navy Blue" class="w-full h-4/5 object-contain">
+                    <span class="w-full bg-[#12161f] py-1 text-[11px] text-center font-bold text-gray-200 rounded">নেভি ব্লু</span>
+                </button>
+
+            </div>
+        </section>
+
+        <!-- ধাপ ৩: সাইজ সেকশন (প্রতিটি সাইজের পাশে '+ যোগ করুন' বাটন) -->
+        <section class="bg-brandCard border border-brandBorder rounded-2xl p-5 shadow-lg space-y-4">
+            <div>
+                <span class="text-xs uppercase font-en tracking-widest text-brandGold font-bold">Polo Ralph Lauren</span>
+                <h1 class="text-xl sm:text-2xl font-bold text-white mt-0.5">Premium Quality Baggy Pant</h1>
+                <div class="flex items-baseline gap-3 mt-1.5">
+                    <span class="text-2xl font-black text-brandGold font-en">৳ ৭৯৯</span>
+                    <span class="text-sm text-gray-400 line-through font-en">৳ ১,৪৯৯</span>
+                    <span class="text-xs bg-brandGold/15 text-brandGold border border-brandGold/30 px-2 py-0.5 rounded-full font-bold">ইন স্টক</span>
+                </div>
+            </div>
+
+            <!-- প্রতিটি সাইজের মেজারমেন্ট এবং পাশে Add বাটন -->
+            <div>
+                <div class="flex items-center justify-between mb-2">
+                    <label class="block text-xs font-bold text-brandGold uppercase tracking-wide">
+                        📏 সাইজ অনুযায়ী সরাসরি যোগ করুন:
+                    </label>
+                    <span class="text-[11px] text-gray-400">বর্তমানে কালার: <strong id="hintSelectedColor" class="text-brandGold">ব্লাক</strong></span>
+                </div>
+
+                <div class="space-y-2.5">
+                    
+                    <!-- সাইজ M -->
+                    <div class="bg-brandInner border border-brandBorder hover:border-brandGold/40 p-3 rounded-xl flex items-center justify-between gap-3">
+                        <div class="flex items-center gap-3">
+                            <span class="w-9 h-9 bg-brandGold text-black font-en font-black text-sm rounded-lg flex items-center justify-center shadow">M</span>
+                            <div>
+                                <span class="text-xs font-bold text-white block">সাইজ: M</span>
+                                <span class="text-[11px] text-gray-400">কোমর ৩০ - ৩২" | লম্বা ৩৮"</span>
+                            </div>
+                        </div>
+                        <button type="button" 
+                                onclick="addSizeToCart('M', 'কোমর ৩০-৩২, লম্বা ৩৮')" 
+                                class="bg-brandGold hover:bg-brandGoldHover active:scale-95 text-black font-bold text-xs px-3.5 py-2 rounded-lg flex items-center gap-1 shadow-md whitespace-nowrap">
+                            <span>+</span> যোগ করুন
+                        </button>
+                    </div>
+
+                    <!-- সাইজ L -->
+                    <div class="bg-brandInner border border-brandBorder hover:border-brandGold/40 p-3 rounded-xl flex items-center justify-between gap-3">
+                        <div class="flex items-center gap-3">
+                            <span class="w-9 h-9 bg-brandGold text-black font-en font-black text-sm rounded-lg flex items-center justify-center shadow">L</span>
+                            <div>
+                                <span class="text-xs font-bold text-white block">সাইজ: L</span>
+                                <span class="text-[11px] text-gray-400">কোমর ৩২ - ৩৪" | লম্বা ৩৯"</span>
+                            </div>
+                        </div>
+                        <button type="button" 
+                                onclick="addSizeToCart('L', 'কোমর ৩২-৩৪, লম্বা ৩৯')" 
+                                class="bg-brandGold hover:bg-brandGoldHover active:scale-95 text-black font-bold text-xs px-3.5 py-2 rounded-lg flex items-center gap-1 shadow-md whitespace-nowrap">
+                            <span>+</span> যোগ করুন
+                        </button>
+                    </div>
+
+                    <!-- সাইজ XL -->
+                    <div class="bg-brandInner border border-brandBorder hover:border-brandGold/40 p-3 rounded-xl flex items-center justify-between gap-3">
+                        <div class="flex items-center gap-3">
+                            <span class="w-9 h-9 bg-brandGold text-black font-en font-black text-sm rounded-lg flex items-center justify-center shadow">XL</span>
+                            <div>
+                                <span class="text-xs font-bold text-white block">সাইজ: XL</span>
+                                <span class="text-[11px] text-gray-400">কোমর ৩৪ - ৩৬" | লম্বা ৪০"</span>
+                            </div>
+                        </div>
+                        <button type="button" 
+                                onclick="addSizeToCart('XL', 'কোমর ৩৪-৩৬, লম্বা ৪০')" 
+                                class="bg-brandGold hover:bg-brandGoldHover active:scale-95 text-black font-bold text-xs px-3.5 py-2 rounded-lg flex items-center gap-1 shadow-md whitespace-nowrap">
+                            <span>+</span> যোগ করুন
+                        </button>
+                    </div>
+
+                    <!-- সাইজ XXL -->
+                    <div class="bg-brandInner border border-brandBorder hover:border-brandGold/40 p-3 rounded-xl flex items-center justify-between gap-3">
+                        <div class="flex items-center gap-3">
+                            <span class="w-9 h-9 bg-brandGold text-black font-en font-black text-sm rounded-lg flex items-center justify-center shadow">XXL</span>
+                            <div>
+                                <span class="text-xs font-bold text-white block">সাইজ: XXL</span>
+                                <span class="text-[11px] text-gray-400">কোমর ৩৬ - ৩৮" | লম্বা ৪১"</span>
+                            </div>
+                        </div>
+                        <button type="button" 
+                                onclick="addSizeToCart('XXL', 'কোমর ৩৬-৩৮, লম্বা ৪১')" 
+                                class="bg-brandGold hover:bg-brandGoldHover active:scale-95 text-black font-bold text-xs px-3.5 py-2 rounded-lg flex items-center gap-1 shadow-md whitespace-nowrap">
+                            <span>+</span> যোগ করুন
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- নির্বাচিত আইটেমের তালিকা -->
+            <div class="pt-3 border-t border-brandBorder">
+                <div class="flex items-center justify-between mb-2">
+                    <span class="text-xs font-bold text-white">আপনার পছন্দের তালিকা:</span>
+                    <span id="badgeItemCount" class="text-[11px] text-brandGold font-bold bg-brandInner border border-brandBorder px-2.5 py-0.5 rounded-full">০ টি আইটেম</span>
+                </div>
+                <div id="selectedCartList" class="space-y-2">
+                    <!-- ডায়নামিক কার্ট লিস্ট -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ধাপ ৪: কাপড়ের গুণাগুণ ও মান (সংক্ষিপ্ত ও স্পষ্ট) -->
+        <section class="bg-brandCard border border-brandBorder rounded-2xl p-5 shadow-lg">
+            <h3 class="text-sm font-bold text-brandGold flex items-center gap-1.5 mb-3">
+                <span>✨</span> কাপড়ের গুণাগুণ ও মান:
+            </h3>
+            <div class="grid grid-cols-1 gap-2 text-xs text-gray-300">
+                <div class="flex items-start gap-2.5 bg-brandInner p-3 rounded-xl border border-brandBorder">
+                    <span class="text-brandGold font-bold text-sm">✔</span>
+                    <span><strong>ফেব্রিক:</strong> ২৪০ জিএসএম চায়না ডব্বি ফেব্রিক (China Dobby Fabric)। দীর্ঘস্থায়ী, প্রিমিয়াম টেক্সচার ও অত্যন্ত আরামদায়ক।</span>
+                </div>
+                <div class="flex items-start gap-2.5 bg-brandInner p-3 rounded-xl border border-brandBorder">
+                    <span class="text-brandGold font-bold text-sm">✔</span>
+                    <span><strong>ফিটিং:</strong> ট্রেন্ডি রিল্যাক্সড ব্যাগি ফিট ও পারফেক্ট ক্যাজুয়াল ট্রাউজার্স।</span>
+                </div>
+                <div class="flex items-start gap-2.5 bg-brandInner p-3 rounded-xl border border-brandBorder">
+                    <span class="text-brandGold font-bold text-sm">✔</span>
+                    <span><strong>গ্যারান্টি:</strong> ১০০% কালার ও কোয়ালিটি গ্যারান্টি। ওয়াশে কোনো ফেড বা নষ্ট হওয়ার ভয় নেই।</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ধাপ ৫: ৩ ধাপের ডেলিভারি চার্জ এবং অর্ডার ফর্ম -->
+        <section class="bg-brandCard border border-brandBorder rounded-2xl p-5 shadow-xl space-y-4">
+            <div class="text-center">
+                <h2 class="text-lg font-bold text-brandGold">অর্ডার কনফার্ম করতে ফর্মটি পূরণ করুন</h2>
+                <p class="text-xs text-gray-400 mt-0.5">ক্যাশ অন ডেলিভারিতে সারাদেশে ডেলিভারি দেওয়া হয়</p>
+            </div>
+
+            <form id="orderForm" onsubmit="submitCustomerOrder(event)" class="space-y-3.5">
+                <div>
+                    <label class="block text-xs font-semibold text-gray-300 mb-1">আপনার নাম *</label>
+                    <input type="text" id="custName" required placeholder="পুরো নাম লিখুন" class="w-full bg-brandInner border border-brandBorder rounded-xl p-3 text-xs text-white focus:border-brandGold outline-none">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-gray-300 mb-1">মোবাইল নাম্বার *</label>
+                    <input type="tel" id="custPhone" required placeholder="০১৭XXXXXXXX" pattern="[0-9]{11}" class="w-full bg-brandInner border border-brandBorder rounded-xl p-3 text-xs text-white focus:border-brandGold outline-none font-en">
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-gray-300 mb-1">ডেলিভারি এরিয়া (৩ ধাপ) *</label>
+                    <select id="deliveryZone" onchange="manualZoneChange()" required class="w-full bg-brandInner border border-brandBorder rounded-xl p-3 text-xs text-white focus:border-brandGold outline-none">
+                        <option value="" disabled selected>ডেলিভারি এরিয়া নির্বাচন করুন</option>
+                        <option value="70">ঢাকা সিটির ভিতর (৳ ৭০)</option>
+                        <option value="100">ঢাকা সিটির বাইরে / ঢাকা জেলা (৳ ১০০)</option>
+                        <option value="120">ঢাকা জেলার বাইরে / সারাদেশে (৳ ১২০)</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-semibold text-gray-300 mb-1">সম্পূর্ণ ঠিকানা (বাসা/রোড, এলাকা, জেলা) *</label>
+                    <textarea id="custAddress" rows="3" required placeholder="ঠিকানা টাইপ করার সাথে সাথে ডেলিভারি এরিয়া অটো ডিটেক্ট হবে..." oninput="detectZoneFromAddress(this.value)" class="w-full bg-brandInner border border-brandBorder rounded-xl p-3 text-xs text-white focus:border-brandGold outline-none"></textarea>
+                    <div id="detectNotice" class="hidden text-[11px] text-brandGold mt-1 font-semibold flex items-center gap-1">
+                        <span>⚡</span> <span id="detectNoticeText"></span>
+                    </div>
+                </div>
+
+                <!-- মূল্য তালিকা সারসংক্ষেপ -->
+                <div class="bg-brandInner border border-brandBorder rounded-xl p-4 space-y-2 text-xs">
+                    <div class="flex justify-between text-gray-300">
+                        <span>মোট পণ্যের সংখ্যা:</span>
+                        <span id="summaryTotalQty" class="font-bold text-white">০ পিস</span>
+                    </div>
+                    <div class="flex justify-between text-gray-300">
+                        <span>পণ্যের মোট দাম:</span>
+                        <span id="summaryProductPrice" class="font-bold text-white">৳ ০</span>
+                    </div>
+                    <div class="flex justify-between text-gray-300">
+                        <span>ডেলিভারি চার্জ:</span>
+                        <span id="summaryDeliveryCharge" class="font-bold text-brandGold">৳ ০</span>
+                    </div>
+                    <div class="flex justify-between text-sm font-bold text-white pt-2 border-t border-brandBorder">
+                        <span>সর্বমোট মূল্য:</span>
+                        <span id="summaryGrandTotal" class="text-base text-brandGold font-en">৳ ০</span>
+                    </div>
+                </div>
+
+                <button type="submit" id="btnSubmit" class="w-full py-4 bg-brandGold hover:bg-brandGoldHover text-black rounded-xl font-black text-sm tracking-wide uppercase transition-all shadow-lg shadow-brandGold/20 active:scale-98">
+                    অর্ডার কনফার্ম করুন (৳ <span id="btnAmountDisplay" class="font-en">০</span>)
+                </button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- ফুটার -->
+    <footer class="border-t border-brandBorder py-6 mt-8 text-center text-xs text-gray-400">
+        <p>© 2026 <strong class="text-brandGold font-en">1990</strong>. All Rights Reserved.</p>
+        <p class="mt-1">হটলাইন: <a href="tel:01949704302" class="text-brandGold font-bold font-en">01949704302</a></p>
+    </footer>
+
+    <!-- সাকসেস পপ-আপ মেসেজ বক্স -->
+    <div id="orderSuccessModal" class="fixed inset-0 bg-black/85 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-brandCard border border-brandGold/40 p-6 rounded-2xl max-w-sm w-full text-center space-y-4 shadow-2xl">
+            <div class="w-14 h-14 bg-brandGold/20 border-2 border-brandGold text-brandGold rounded-full flex items-center justify-center text-2xl mx-auto">
+                ✔
+            </div>
+            <div>
+                <h3 class="text-lg font-bold text-white">অর্ডার সফলভাবে গ্রহণ করা হয়েছে!</h3>
+                <p id="orderSuccessText" class="text-xs text-gray-300 mt-1 leading-relaxed"></p>
+            </div>
+            <button type="button" onclick="closeSuccessDialog()" class="w-full py-3 bg-brandGold text-black font-bold rounded-xl text-xs uppercase">
+                ঠিক আছে
+            </button>
+        </div>
+    </div>
+
+    <!-- জাভাস্ক্রিপ্ট কোড -->
+    <script>
+        const UNIT_PRICE = 799;
+        let selectedColor = 'ব্লাক'; // ডিফল্ট সিলেক্টেড কালার
+        let cart = []; // { id, size, color, measurement, qty }
+        let deliveryCharge = 0;
+
+        // থাম্বনেল থেকে কালার সিলেক্ট করা
+        function selectColorVariant(colorName, imgSrc, buttonElement) {
+            selectedColor = colorName;
+
+            // মেইন ইমেজ আপডেট
+            const mainImg = document.getElementById('mainProductPhoto');
+            mainImg.style.opacity = '0.3';
+            setTimeout(() => {
+                mainImg.src = imgSrc;
+                mainImg.style.opacity = '1';
+            }, 100);
+
+            // থাম্বনেল অ্যাক্টিভ ক্লাস আপডেট
+            document.querySelectorAll('.thumb-item').forEach(btn => {
+                btn.classList.remove('thumb-selected');
+                const check = btn.querySelector('.check-indicator');
+                if (check) check.classList.add('hidden');
+            });
+
+            if (buttonElement) {
+                buttonElement.classList.add('thumb-selected');
+                const check = buttonElement.querySelector('.check-indicator');
+                if (check) check.classList.remove('hidden');
+            }
+
+            // কালার নোটিফিকেশন টেক্সট আপডেট
+            document.getElementById('floatingColorName').innerText = colorName;
+            document.getElementById('selectedColorDisplay').innerText = `সিলেক্টেড: ${colorName}`;
+            document.getElementById('hintSelectedColor').innerText = colorName;
+        }
+
+        // সাইজের পাশের '+ যোগ করুন' বাটন চাপলে আইটেম যুক্ত করা
+        function addSizeToCart(size, measurement) {
+            const itemId = `${size}-${selectedColor}`;
+
+            const existingIndex = cart.findIndex(item => item.id === itemId);
+            if (existingIndex > -1) {
+                cart[existingIndex].qty += 1;
+            } else {
+                cart.push({
+                    id: itemId,
+                    size: size,
+                    color: selectedColor,
+                    measurement: measurement,
+                    qty: 1
+                });
+            }
+
+            renderCart();
+        }
+
+        // কোয়ান্টিটি পরিবর্তন (+ / -)
+        function changeQty(index, delta) {
+            cart[index].qty += delta;
+            if (cart[index].qty <= 0) {
+                cart.splice(index, 1);
+            }
+            renderCart();
+        }
+
+        // কার্ট থেকে আইটেম ডিলিট করা
+        function removeItemFromCart(index) {
+            cart.splice(index, 1);
+            renderCart();
+        }
+
+        // কার্ট রেন্ডারিং
+        function renderCart() {
+            const listEl = document.getElementById('selectedCartList');
+            const badgeCount = document.getElementById('badgeItemCount');
+
+            const totalPieces = cart.reduce((sum, item) => sum + item.qty, 0);
+            badgeCount.innerText = `${totalPieces} টি নির্বাচিত`;
+
+            if (cart.length === 0) {
+                listEl.innerHTML = `
+                    <div class="text-[11px] text-gray-400 text-center py-3 bg-brandInner rounded-xl border border-dashed border-brandBorder">
+                        এখনো কোনো আইটেম যোগ করেননি। থাম্বনেল থেকে কালার বেছে নিয়ে সাইজের পাশের <strong>'+ যোগ করুন'</strong> বাটনে চাপ দিন।
+                    </div>`;
+            } else {
+                let html = '';
+                cart.forEach((item, idx) => {
+                    html += `
+                        <div class="bg-brandInner border border-brandBorder p-3 rounded-xl flex items-center justify-between gap-2 text-xs">
+                            <div>
+                                <div class="flex items-center gap-1.5">
+                                    <span class="bg-[#1b212c] text-brandGold font-bold px-1.5 py-0.5 rounded text-[10px] border border-brandBorder">${item.size}</span>
+                                    <span class="font-bold text-white">${item.color}</span>
+                                </div>
+                                <span class="text-[10px] text-gray-400 block mt-0.5">${item.measurement}</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="flex items-center border border-brandBorder rounded-lg bg-[#12161f] overflow-hidden">
+                                    <button type="button" onclick="changeQty(${idx}, -1)" class="px-2.5 py-1 text-gray-300 hover:text-white font-bold bg-[#1b212c]">-</button>
+                                    <span class="px-3 py-1 font-bold text-brandGold text-xs font-en">${item.qty}</span>
+                                    <button type="button" onclick="changeQty(${idx}, 1)" class="px-2.5 py-1 text-gray-300 hover:text-white font-bold bg-[#1b212c]">+</button>
+                                </div>
+                                <button type="button" onclick="removeItemFromCart(${idx})" class="text-red-400 hover:text-red-300 font-bold p-1 text-sm" title="ডিলিট করুন">✕</button>
+                            </div>
+                        </div>
+                    `;
+                });
+                listEl.innerHTML = html;
+            }
+
+            calculateTotals();
+        }
+
+        // ম্যানুয়াল ডেলিভারি ড্রপডাউন সিলেক্ট
+        function manualZoneChange() {
+            const selectEl = document.getElementById('deliveryZone');
+            deliveryCharge = selectEl.value ? parseInt(selectEl.value) : 0;
+            document.getElementById('detectNotice').classList.add('hidden');
+            calculateTotals();
+        }
+
+        // ঠিকানার কীওয়ার্ড অনুযায়ী অটো-ডিটেকশন
+        function detectZoneFromAddress(addressText) {
+            const txt = addressText.toLowerCase();
+            const selectEl = document.getElementById('deliveryZone');
+            const noticeEl = document.getElementById('detectNotice');
+            const noticeText = document.getElementById('detectNoticeText');
+
+            // ১. ঢাকা সিটি (৭০ টাকা)
+            const dhakaCityAreas = [
+                'dhaka', 'ঢাকা', 'uttara', 'উত্তরা', 'mirpur', 'মিরপুর', 'dhanmondi', 'ধানমন্ডি',
+                'gulshan', 'গুলশান', 'banani', 'বনানী', 'mohammadpur', 'মোহাম্মদপুর', 'badda', 'বাড্ডা',
+                'rampura', 'রামপুরা', 'khilgaon', 'খিলগাঁও', 'motijheel', 'মতিঝিল', 'jatrabari', 'যাত্রাবাড়ী',
+                'paltan', 'পল্টন', 'farmgate', 'ফার্মগেট', 'bashundhara', 'বসুন্ধরা', 'shantinagar', 'শান্তিনগর',
+                'mohakhali', 'মহাখালী', 'malibagh', 'মালিবাগ', 'tejgaon', 'তেজগাঁও', 'lalbagh', 'লালবাগ'
+            ];
+
+            // ২. ঢাকা সিটির বাইরে কিন্তু ঢাকা জেলা (১০০ টাকা)
+            const dhakaSubAreas = [
+                'savar', 'সাভার', 'ashulia', 'আশুলিয়া', 'dhamrai', 'ধামরাই',
+                'keraniganj', 'কেরানীগঞ্জ', 'dohar', 'দোহার', 'nawabganj', 'নবাবগঞ্জ'
+            ];
+
+            // ৩. ঢাকার বাইরে অন্য জেলা (১২০ টাকা)
+            const outsideDistricts = [
+                'chittagong', 'চট্টগ্রাম', 'sylhet', 'সিলেট', 'rajshahi', 'রাজশাহী', 'khulna', 'খুলনা',
+                'barisal', 'বরিশাল', 'rangpur', 'রংপুর', 'mymensingh', 'ময়মনসিংহ', 'cumilla', 'comilla', 'কুমিল্লা',
+                'gazipur', 'গাজীপুর', 'narayanganj', 'নারায়ণগঞ্জ', 'bogura', 'bogra', 'বগুড়া', 'feni', 'ফেনী',
+                'coxs bazar', 'কক্সবাজার', 'jashore', 'যশোর', 'tangail', 'টাঙ্গাইল', 'faridpur', 'ফরিদপুর',
+                'pabna', 'পাবনা', 'kushtia', 'কুষ্টিয়া', 'noakhali', 'নোয়াখালী', 'brahmanbaria', 'ব্রাহ্মণবাড়িয়া'
+            ];
+
+            let matched = false;
+
+            // সাব-ঢাকা চেক
+            for (let word of dhakaSubAreas) {
+                if (txt.includes(word)) {
+                    selectEl.value = "100";
+                    deliveryCharge = 100;
+                    noticeText.innerText = "ঢাকা জেলা/সিটির বাইরে (৳১০০) অটো ডিটেক্ট হয়েছে";
+                    matched = true;
+                    break;
+                }
+            }
+
+            // ঢাকার বাইরে জেলা চেক
+            if (!matched) {
+                for (let word of outsideDistricts) {
+                    if (txt.includes(word)) {
+                        selectEl.value = "120";
+                        deliveryCharge = 120;
+                        noticeText.innerText = "ঢাকার বাইরে সারাদেশ (৳১২০) অটো ডিটেক্ট হয়েছে";
+                        matched = true;
+                        break;
+                    }
+                }
+            }
+
+            // ঢাকা সিটি চেক
+            if (!matched) {
+                for (let word of dhakaCityAreas) {
+                    if (txt.includes(word)) {
+                        selectEl.value = "70";
+                        deliveryCharge = 70;
+                        noticeText.innerText = "ঢাকা সিটির ভেতর (৳৭০) অটো ডিটেক্ট হয়েছে";
+                        matched = true;
+                        break;
+                    }
+                }
+            }
+
+            if (matched) {
+                noticeEl.classList.remove('hidden');
+            }
+            calculateTotals();
+        }
+
+        // মোট হিসাব নিরূপণ
+        function calculateTotals() {
+            const totalQty = cart.reduce((sum, item) => sum + item.qty, 0);
+            const productPriceTotal = totalQty * UNIT_PRICE;
+            const grandTotal = totalQty > 0 ? (productPriceTotal + deliveryCharge) : 0;
+
+            document.getElementById('summaryTotalQty').innerText = `${totalQty} পিস`;
+            document.getElementById('summaryProductPrice').innerText = `৳ ${productPriceTotal}`;
+            document.getElementById('summaryDeliveryCharge').innerText = `৳ ${deliveryCharge}`;
+            document.getElementById('summaryGrandTotal').innerText = `৳ ${grandTotal}`;
+            document.getElementById('btnAmountDisplay').innerText = grandTotal;
+        }
+
+        // অর্ডার সাবমিট প্রসেস
+        async function submitCustomerOrder(event) {
+            event.preventDefault();
+
+            const totalPieces = cart.reduce((sum, item) => sum + item.qty, 0);
+            if (totalPieces === 0) {
+                alert('দয়া করে থাম্বনেল থেকে কালার বেছে নিয়ে সাইজের পাশের "+ যোগ করুন" বাটনে ক্লিক করুন!');
+                return;
+            }
+
+            const zoneSelect = document.getElementById('deliveryZone');
+            if (!zoneSelect.value) {
+                alert('দয়া করে ডেলিভারি এরিয়া নির্বাচন করুন!');
+                return;
+            }
+
+            const btn = document.getElementById('btnSubmit');
+            btn.disabled = true;
+            btn.innerText = 'অর্ডার প্রসেসিং হচ্ছে...';
+
+            const name = document.getElementById('custName').value;
+            const phone = document.getElementById('custPhone').value;
+            const address = document.getElementById('custAddress').value;
+            const zoneText = zoneSelect.options[zoneSelect.selectedIndex].text;
+
+            const itemsFormatted = cart.map(item => `${item.size} (${item.color}) x ${item.qty}টি`).join(' | ');
+            const totalAmount = (totalPieces * UNIT_PRICE) + deliveryCharge;
+
+            try {
+                // Web3Forms Integration
+                await fetch('https://api.web3forms.com/submit', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        access_key: '8cb021cc-8058-4dd2-9c17-c7f8728f9355',
+                        subject: `🚨 নতুন অর্ডার! (1990) - ${name} [${totalPieces} পিস]`,
+                        from_name: '1990 Fashion Order',
+                        customer_name: name,
+                        customer_phone: phone,
+                        delivery_zone: zoneText,
+                        full_address: address,
+                        ordered_items: itemsFormatted,
+                        total_quantity: `${totalPieces} পিস`,
+                        delivery_charge: `৳ ${deliveryCharge}`,
+                        grand_total: `৳ ${totalAmount}`
+                    })
+                });
+
+                document.getElementById('orderSuccessText').innerText = `ধন্যবাদ ${name}! আপনার ${totalPieces} পিস প্যান্টের অর্ডার সফলভাবে প্লেস হয়েছে। সর্বমোট বিল: ৳${totalAmount}। আমাদের প্রতিনিধি শীঘ্রই আপনার সাথে যোগাযোগ করবেন।`;
+                document.getElementById('orderSuccessModal').classList.remove('hidden');
+
+                document.getElementById('orderForm').reset();
+                cart = [];
+                deliveryCharge = 0;
+                renderCart();
+            } catch (error) {
+                alert('অর্ডার সাবমিট করতে সাময়িক সমস্যা হয়েছে। সরাসরি কল করুন: 01949704302');
+            } finally {
+                btn.disabled = false;
+                calculateTotals();
+            }
+        }
+
+        function closeSuccessDialog() {
+            document.getElementById('orderSuccessModal').classList.add('hidden');
+        }
+
+        // ইনিশিয়াল কার্ট লোড
+        renderCart();
+    </script>
+</body>
+</html>
